@@ -1,11 +1,11 @@
 it("はじめてのmock", () => {
-  // jest.fn()
-  const mockFunc = jest.fn(() => "Hello mock");
-  expect(mockFunc()).toBe("Hello mock");
+    // jest.fn()
+    const mockFunc = jest.fn(() => "Hello mock");
+    expect(mockFunc()).toBe("Hello mock");
 });
 
 it("mockImplementation", () => {
-  const mockFunc = jest.fn();
-  mockFunc.mockImplementation(() => "Hello mock2");
-  expect(mockFunc()).toBe("Hello mock2");
+    const mockFunc = jest.fn();
+    mockFunc.mockImplementation(() => "Hello mock2");
+    expect(mockFunc()).toBe("Hello mock2");
 });
